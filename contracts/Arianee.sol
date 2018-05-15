@@ -3,24 +3,26 @@ pragma solidity ^0.4.18;
 import "./EIP20.sol";
 
 
-contract Legolas is EIP20 {
+contract Arianee is EIP20 {
 
     // Standard ERC20 information
-    string  constant NAME = "LGO Token Test";
-    string  constant SYMBOL = "LGO";
+    string  constant NAME = "Arianee Token Test";
+    string  constant SYMBOL = "ARIA";
     uint8   constant DECIMALS = 8;
     uint256 constant UNIT = 10**uint256(DECIMALS);
 
     uint256 constant onePercent = 181415052000000;
 
+    // 2% for early-users
+    uint256 constant EARLY_AMOUNT    =   2 * onePercent;
     // 5% for advisors
-    uint256 constant ADVISORS_AMOUNT =   5 * onePercent;
+    uint256 constant ADVISORS_AMOUNT =   3 * onePercent;
     // 15% for founders
     uint256 constant FOUNDERS_AMOUNT =  15 * onePercent;
     // 60% sold in pre-sale
-    uint256 constant HOLDERS_AMOUNT  =  60 * onePercent;
+    uint256 constant HOLDERS_AMOUNT  =  65 * onePercent;
     // 20% reserve
-    uint256 constant RESERVE_AMOUNT  =  20 * onePercent;
+    uint256 constant RESERVE_AMOUNT  =  15 * onePercent;
     // ADVISORS_AMOUNT + FOUNDERS_AMOUNT + HOLDERS_AMOUNT +RESERVE_AMOUNT
     uint256 constant INITIAL_AMOUNT  = 100 * onePercent;
     // 20% for holder bonus
@@ -38,7 +40,7 @@ contract Legolas is EIP20 {
 
     event Allocate(address _address, uint256 _value);
 
-    function Legolas() EIP20( // EIP20 constructor
+    function Arianee() EIP20( // EIP20 constructor
         INITIAL_AMOUNT + BONUS_AMOUNT,
         NAME,
         DECIMALS,
@@ -93,6 +95,7 @@ contract Legolas is EIP20 {
         initialHolders.push(_address);
 
         Allocate(_address, _amount);
+        Transfer(msg.sender, _address, _amount);        
 
         return true;
     }
