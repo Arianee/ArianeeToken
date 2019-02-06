@@ -4,3 +4,4 @@ node_modules
 deployment/
 lastNonce.txt
 truffle.js
+.DS_Store
