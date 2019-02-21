@@ -1,5 +1,5 @@
-var Legolas = artifacts.require("./Legolas.sol");
+var Aria = artifacts.require("./Aria.sol");
 
 module.exports = function(deployer, network, accounts) {
-  deployer.deploy(Legolas);
+  deployer.deploy(Aria);
 };
