@@ -36,12 +36,12 @@ contract Aria is
   /**
    * Number of decimals.
    */
-  uint8 internal tokenDecimals = 8;
+  uint8 internal tokenDecimals = 18;
 
   /**
    * Total supply of tokens.
    */
-  uint256 internal tokenTotalSupply= 1000000000;
+  uint256 internal tokenTotalSupply= 1000000000000000000000000;
 
   /**
    * Balance information map.
