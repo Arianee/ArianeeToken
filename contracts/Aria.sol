@@ -193,7 +193,6 @@ contract Aria is
     public
     returns (bool _success)
   {
-    require((_value == 0) || (allowed[msg.sender][_spender] == 0), ALLOWANCE_ALREADY_SET);
 
     allowed[msg.sender][_spender] = _value;
 
