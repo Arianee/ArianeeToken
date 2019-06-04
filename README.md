@@ -2,7 +2,7 @@
 
 ERC20 contract for Arianee Token.
 
-Based on https://github.com/ConsenSys/Tokens/tree/master/contracts/eip20
+Based on https://github.com/0xcert/framework/blob/master/packages/0xcert-ethereum-erc20-contracts/src/contracts/erc20.sol
 
 ## Features added to standard ERC20
 
