@@ -85,7 +85,8 @@ contract Aria is
   }
 
   /**
-   * @dev Returns the name of the token.
+   * @notice Returns the name of the token.
+   * @return Name of the token.
    */
   function name()
     external
@@ -96,7 +97,8 @@ contract Aria is
   }
 
   /**
-   * @dev Returns the symbol of the token.
+   * @notice Returns the symbol of the token.
+   * @return Symbol of the token.
    */
   function symbol()
     external
@@ -107,7 +109,8 @@ contract Aria is
   }
 
   /**
-   * @dev Returns the number of decimals the token uses.
+   * @notice Returns the number of decimals the token uses.
+   * @return Decimal of the token.
    */
   function decimals()
     external
@@ -118,7 +121,8 @@ contract Aria is
   }
 
   /**
-   * @dev Returns the total token supply.
+   * @notice Returns the total token supply.
+   * @return Total supply of the token.
    */
   function totalSupply()
     external
@@ -129,8 +133,9 @@ contract Aria is
   }
 
   /**
-   * @dev Returns the account balance of another account with address _owner.
+   * @notice Returns the account balance of another account with address _owner.
    * @param _owner The address from which the balance will be retrieved.
+   * @return Balance of the given address.
    */
   function balanceOf(
     address _owner
@@ -146,6 +151,7 @@ contract Aria is
    * @dev Returns the amount which _spender is still allowed to withdraw from _owner.
    * @param _owner The address of the account owning tokens.
    * @param _spender The address of the account able to transfer the tokens.
+   * @return the amount of token the spender is allowed to withdraw.
    */
   function allowance(
     address _owner,
@@ -163,6 +169,7 @@ contract Aria is
    * function SHOULD throw if the _from account balance does not have enough tokens to spend.
    * @param _to The address of the recipient.
    * @param _value The amount of token to be transferred.
+   * @return true if the transfer succeed.
    */
   function transfer(
     address _to,
@@ -185,6 +192,7 @@ contract Aria is
    * this function is called again it overwrites the current allowance with _value.
    * @param _spender The address of the account able to transfer the tokens.
    * @param _value The amount of tokens to be approved for transfer.
+   * @return true if the approve succeed.
    */
   function approve(
     address _spender,
@@ -206,6 +214,7 @@ contract Aria is
    * @param _from The address of the sender.
    * @param _to The address of the recipient.
    * @param _value The amount of token to be transferred.
+   * @return true if the transfer succeed.
    */
   function transferFrom(
     address _from,
