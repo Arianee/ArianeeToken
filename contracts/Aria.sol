@@ -2,7 +2,7 @@ pragma solidity 0.5.6;
 
 import "@0xcert/ethereum-utils-contracts/src/contracts/math/safe-math.sol";
 import "@0xcert/ethereum-utils-contracts/src/contracts/utils/supports-interface.sol";
-import "./erc20.sol";
+import "@0xcert/ethereum-erc20-contracts/src/contracts/erc20.sol";
 
 /**
  * @title ERC20 standard token implementation.
