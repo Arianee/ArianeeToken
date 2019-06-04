@@ -1,7 +1,5 @@
-build
-!build/contracts
-node_modules
-deployment/
-lastNonce.txt
-truffle.js
 .DS_Store
+.node*
+node_modules
+build
+.idea/
