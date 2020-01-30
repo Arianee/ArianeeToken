@@ -8,14 +8,14 @@ Based on https://github.com/0xcert/framework/blob/master/packages/0xcert-ethereu
 
 ### Lock-Up
 
-The Arianee Tokens attributed to the founders, advisors of the ICO will be blocked in the following conditions so that they will not be in a position to use or exchange their LGO Tokens just following the end of the ICO.
+The Arianee Tokens attributed to the founders, advisors of the ICO will be blocked in the following conditions so that they will not be in a position to use or exchange their ARIA Tokens just following the end of the ICO.
 
 Founders: blocked 1 year, then released the second year, 1/12 per month.
 Advisors: progressively released during 1 year, 1/12 per month.
 
 ### Arianee 2-Year Holding Bonus
 
-Every 6 months during 2 years (4 times), 5% of additional LGO Tokens will be distributed, proportionally, to the Arianee Holders whose tokens were issued in the ICO and that have not moved their tokens (including already received bonus tokens) from the initial address.
+Every 6 months during 2 years (4 times), 5% of additional ARIA Tokens will be distributed, proportionally, to the Arianee Holders whose tokens were issued in the ICO and that have not moved their tokens (including already received bonus tokens) from the initial address.
 
 ## Test coverage
 
